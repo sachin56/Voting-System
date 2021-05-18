@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.hardware.biometrics.BiometricPrompt;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CancellationSignal;
 import android.view.Menu;
@@ -175,6 +176,15 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
+    }
+
+    public void call(View view) {
+        String number ="0112 868 441";
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + number));
+
+        startActivity(intent);
 
     }
 }

@@ -55,4 +55,21 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:text="Thanks for voting!"/>
+
+    <ImageButton
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/imgbtn"
+        android:layout_width="195dp"
+        android:layout_height="201dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/mycall"
+        android:onClick="call"
+        />
+
 </RelativeLayout>
